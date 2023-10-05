@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  margin: 0;
+  text-align: center;
+}
+h1 {
+  font-size: 64px;
+  font-family: "Courier New", Courier, monospace, sans-serif;
+}
+.display {
+  margin: 0 30%;
+  width: 40%;
+  height: 150px;
+  background-color: lightgray;
+  border: 10px solid black;
+  border-radius: 15px 15px 0 0;
+  box-sizing: border-box;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 15px 15px;
+  border: 2px solid black;
+  margin: 0 30%;
+  width: 40%;
+  background-image: url(transferir.jpg);
+  background-size: cover;
+  box-sizing: border-box;
+  background-position: center;
+}
+.keyboard {
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 10px 0;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  font-size: 32px;
+  font-weight: bold;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 5px ridge black;
+  color: white;
+  background-color: rgba(30, 200, 200, 0.2);
+}
+button:hover {
+  background-color: rgba(30, 200, 200, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+  color: black;
+}
