@@ -1,0 +1,77 @@
+@import url('https://fonts.cdnfonts.com/css/valorant');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+}
+.title {
+  margin-bottom: 30px;
+  margin-left: -8vw;
+  font-family: 'VALORANT', sans-serif;
+}
+.image {
+  width: 50vw;
+}
+.containerHome {
+  max-height: 60vh;
+  color: #fd4556;
+  font-size: 28px;
+  padding: 8vw 0 8vw 8vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/assets/images.jpg);
+  background-size: cover;
+}
+
+button {
+  width: 20vh;
+  height: 15vh;
+  margin: 8px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0.4;
+  font-family: 'VALORANT', sans-serif;
+}
+button:hover {
+  opacity: 0.9;
+}
+.abilities {
+  margin-left: -30px;
+}
+.abilitiesTitle {
+  margin: 50px 0 6px;
+  font-family: 'VALORANT', sans-serif;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+.abilitiesBtn {
+  background-color: black;
+  width: 13vh;
+  height: 13vh;
+}
+.containerInfo {
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+  font-family: sans-serif;
+  font-weight: 200;
+}
+.agentName {
+  margin: 30px 0 10px 0;
+  font-family: 'VALORANT', sans-serif;
+}
+.agentInfo {
+  padding: 0 20px;
+  font-size: 1.5vw;
+}
