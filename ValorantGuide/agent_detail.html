@@ -5,16 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Detalhes do Agente</title>
   </head>
   <body class="container">
-    <img  class="image" id="AgentImage"></img>
+    <div class="image">
+      <img  class="image" id="AgentImage"></img>
+    </div>
     <div class="containerInfo">
       <h1 class="agentName" id="AgentName"></h1>
-      <p class="agentInfo" id="AgentInfo"></p>
+      <p id="AgentInfo"></p>
       <h2 class="abilitiesTitle">Habilidaes</h2>
       <div class="abilities">
-          <div id="abilities"></div>
+        <div id="abilities"></div>
+      </div>
+      <div>
+        <h2 class="abilitiesName"  id="abilitieName"></h2>
+        <p id="abilitieDescription"></p>
       </div>
     </div>
     <script src="./scripts/AgentDetail.js"></script>

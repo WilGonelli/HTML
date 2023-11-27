@@ -12,6 +12,8 @@ async function getAgents() {
           const button = document.createElement('button');
           button.textContent = agent.displayName;
 
+          button.className = 'btnAgents';
+
           const image = agent.displayIcon;
           button.style.backgroundImage = `url(${image})`;
           button.style.backgroundSize = 'cover';

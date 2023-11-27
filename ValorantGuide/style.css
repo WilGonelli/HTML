@@ -7,16 +7,21 @@
 
 .container {
   display: flex;
+  font-family: 'VALORANT', sans-serif;
 }
 .title {
   margin-bottom: 30px;
   margin-left: -8vw;
-  font-family: 'VALORANT', sans-serif;
 }
 .image {
-  width: 50vw;
+  object-fit: cover;
+  width: auto;
+  height: auto;
+  max-height: 95vh;
+  max-width: 50vw;
 }
 .containerHome {
+  font-family: 'VALORANT', sans-serif;
   max-height: 60vh;
   color: #fd4556;
   font-size: 28px;
@@ -38,9 +43,16 @@ button {
   font-weight: bold;
   opacity: 0.4;
   font-family: 'VALORANT', sans-serif;
+  transition: opacity 0.6s ease;
 }
 button:hover {
-  opacity: 0.9;
+  opacity: 0.6;
+}
+.btnAgents:hover {
+  opacity: 1;
+}
+button.clicked {
+  opacity: 1;
 }
 .abilities {
   margin-left: -30px;
@@ -52,11 +64,14 @@ button:hover {
   font-weight: bold;
 }
 .abilitiesBtn {
+  color: #fff;
   background-color: black;
-  width: 13vh;
-  height: 13vh;
+  width: 5rem;
+  height: 5rem;
+  vertical-align: top;
 }
 .containerInfo {
+  position: relative;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
@@ -64,14 +79,18 @@ button:hover {
   flex-direction: column;
   align-items: center;
   font-size: 24px;
-  font-family: sans-serif;
   font-weight: 200;
+  font-family: sans-serif;
 }
 .agentName {
   margin: 30px 0 10px 0;
   font-family: 'VALORANT', sans-serif;
 }
-.agentInfo {
-  padding: 0 20px;
-  font-size: 1.5vw;
+p {
+  padding: 0 10px;
+  font-size: 20px;
+}
+.abilitiesName {
+  font-size: 1.5rem;
+  margin: 40px;
 }
