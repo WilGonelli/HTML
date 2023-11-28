@@ -43,8 +43,7 @@ async function getAgentDetail() {
       agentNameElement.textContent = agentName;
 
       //define a informação do agente
-      let agentInfo = agentDetail.data.description;
-      agentInfo = '\t' + agentInfo;
+      const agentInfo = `\t ${agentDetail.data.description}`;
       const agentInfoElement = document.getElementById('AgentInfo');
       agentInfoElement.innerHTML = `<pre style="white-space: pre-wrap;">${agentInfo}</pre>`;
 
@@ -54,16 +53,16 @@ async function getAgentDetail() {
       agentImageElement.src = agentImage;
 
       //define a cor de fundo da tela com opacidade de 40%
-      let backgroundColor = `#${agentDetail.data.backgroundGradientColors[0]}`;
-      backgroundColor = backgroundColor.slice(0, -2) + 66;
+      const backgroundColor = `#${agentDetail.data.backgroundGradientColors[0].slice(
+        0,
+        -2,
+      )}66`;
       const backgroundColorAgent = document.querySelector('.container');
       backgroundColorAgent.style.backgroundColor = backgroundColor;
 
       //define o plano de fundo atras de onde vai ter as infos do agente
       const backgroundImage = document.querySelector('.containerInfo');
       backgroundImage.style.backgroundImage = `url(${agentDetail.data.background})`;
-    } else {
-      console.log('tetse');
     }
   } catch (error) {
     console.log(error);
