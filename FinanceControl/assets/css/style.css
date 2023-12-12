@@ -1,0 +1,136 @@
+/* estilo geral da pagina */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  min-height: 90vh;
+  max-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../img/backgound.jpg);
+}
+
+.title {
+  margin: 40px;
+  font-size: 42px;
+  white-space: nowrap;
+}
+
+.dados {
+  display: flex;
+  margin: 30px auto;
+}
+
+.openMenu {
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  border: none;
+}
+
+/* estilo da tabela grafica */
+.graphic {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  filter: blur(10px);
+  min-width: 40vw;
+  border-radius: 5vh;
+}
+
+/* estilo do display de informaçoes */
+.extract {
+  background-color: azure;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+  min-width: 40vw;
+  max-height: 55vh;
+  margin-right: 100px;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  border-radius: 5vh;
+  padding: 2vh;
+}
+
+.extractInfo {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  padding: 10px 25px;
+  width: 100%;
+  height: 130px;
+  border-radius: 5vh 5vh 0 0;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.titleSaldo {
+  margin-left: 25px;
+  font-weight: 800;
+}
+
+.saldoEnt,
+.saldoSai,
+.saldo {
+  display: flex;
+  padding: 5px 10px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.extractDetail {
+  width: 100%;
+  padding: 4px;
+  box-sizing: border-box;
+  min-height: 20vh;
+  max-height: 35vh;
+  overflow: auto;
+  border-radius: 0 0 5vh 5vh;
+}
+
+.iconEnt,
+.saldoEnt {
+  color: green;
+  vertical-align: middle;
+}
+.iconSai,
+.saldoSai {
+  color: red;
+  vertical-align: middle;
+}
+
+/* estilo do modal de opçao de entrada ou saida */
+dialog {
+  width: 20vw;
+  height: 45vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+}
+
+.closeMenu {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  margin: -10px 0 0 90%;
+}
+
+.p {
+  background-color: aliceblue;
+  width: 38px;
+  margin: -16px 0 0 128px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.opcao {
+  width: 60%;
+  height: 50px;
+  background-color: cornflowerblue;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  margin: 25px 25px 30px 20%;
+  box-sizing: border-box;
+}
