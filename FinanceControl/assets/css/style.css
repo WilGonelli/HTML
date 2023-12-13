@@ -48,7 +48,7 @@ body {
   background-color: azure;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
   min-width: 40vw;
-  max-height: 55vh;
+  max-height: 62vh;
   margin-right: 100px;
   border: 2px solid rgba(0, 0, 0, 0.7);
   border-radius: 5vh;
@@ -57,11 +57,11 @@ body {
 
 .extractInfo {
   border: 1px solid rgba(0, 0, 0, 0.5);
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px -3px 10px rgba(0, 0, 0, 0.5);
   padding: 10px 25px;
   width: 100%;
   height: 130px;
-  border-radius: 5vh 5vh 0 0;
+  border-radius: 5vh 5vh 2vh 2vh;
   background-color: white;
   box-sizing: border-box;
 }

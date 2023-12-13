@@ -8,6 +8,7 @@
   </head>
 
   <body>
+    <!-- Modal de escolha entre adicionar uma entrada ou saida -->
     <dialog id="modal">
       <section>
         <button
@@ -30,13 +31,60 @@
           </svg>
         </button>
         <h4>Voce gostaria de adicionar uma:</h4>
-        <button type="button" class="opcao">Entrada</button>
+        <button
+          type="button"
+          class="opcao"
+          onclick="document.getElementById('inputDadoEnt').showModal(), document.getElementById('modal').close()">
+          Entrada
+        </button>
         <hr />
         <p class="p">ou</p>
-        <button type="button" class="opcao">saida</button>
+        <button
+          type="button"
+          class="opcao"
+          onclick="document.getElementById('inputDadoSai').showModal(), document.getElementById('modal').close()">
+          saida
+        </button>
       </section>
     </dialog>
 
+    <!-- modal para input de entrada -->
+    <dialog id="inputDadoEnt">
+      <section>
+        <h4>Entrada</h4>
+        <form action="" id="entrada">
+          <label for="descricao"> Descrição </label>
+          <input type="text" name="descricao" id="descricao" />
+          <label for="valor"> Valor </label>
+          <input type="text" name="valor" id="valor" />
+          <button
+            type="submit"
+            onclick="document.getElementById('inputDadoEnt').close()">
+            Cadastrar
+          </button>
+        </form>
+      </section>
+    </dialog>
+
+    <!-- modal para input de saida -->
+    <dialog id="inputDadoSai">
+      <section>
+        <h4>Saida</h4>
+        <form action="" id="saida">
+          <label for="descricaoSai"> Descrição </label>
+          <input type="text" name="descricaoSai" id="descricaoSai" />
+          <label for="valorSai"> Valor </label>
+          <input type="text" name="valorSai" id="valorSai" />
+          <button
+            type="submit"
+            onclick="document.getElementById('inputDadoSai').close()">
+            Cadastrar
+          </button>
+        </form>
+      </section>
+    </dialog>
+
+    <!-- botao para abrir modal de opção de entrada ou saida -->
     <button
       class="openMenu"
       type="submit"
@@ -55,10 +103,12 @@
           stroke-linejoin="round" />
       </svg>
     </button>
+
+    <!-- conteudo da pagina -->
     <h1 class="title">Controle de Finanças</h1>
     <div class="dados">
       <section class="extract">
-        <label for="" class="titleSaldo">Saldo:</label>
+        <h3 for="" class="titleSaldo">Saldo:</h3>
         <div class="extractInfo">
           <div class="saldoEnt">
             <p>Entrada</p>
@@ -115,28 +165,7 @@
             </p>
           </div>
         </div>
-        <div class="extractDetail">
-          <div class="saldo">
-            <p>Pagamento</p>
-            <p>
-              R$ 1500,00
-              <svg
-                class="iconEnt"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M5 7.41421L6.41421 6L12.0711 11.6569L17.7279 6L19.1421 7.41421L12.0711 14.4853L5 7.41421Z"
-                  fill="currentColor" />
-                <path
-                  d="M19 16.3432H5V18.3432H19V16.3432Z"
-                  fill="currentColor" />
-              </svg>
-            </p>
-          </div>
-        </div>
+        <div class="extractDetail"></div>
       </section>
       <section class="graphic"></section>
     </div>
