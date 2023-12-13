@@ -13,17 +13,16 @@ body {
   flex-direction: column;
   align-items: center;
   background-image: url(../img/backgound.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .title {
-  margin: 40px;
-  font-size: 42px;
+  margin: 20px auto;
+  font-size: 48px;
   white-space: nowrap;
-}
-
-.dados {
-  display: flex;
-  margin: 30px auto;
+  color: azure;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
 
 .openMenu {
@@ -34,22 +33,13 @@ body {
   border: none;
 }
 
-/* estilo da tabela grafica */
-.graphic {
-  background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-  filter: blur(10px);
-  min-width: 40vw;
-  border-radius: 5vh;
-}
-
 /* estilo do display de informaçoes */
 .extract {
   background-color: azure;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
-  min-width: 40vw;
-  max-height: 62vh;
-  margin-right: 100px;
+  min-width: 45vw;
+  max-height: 80vh;
+  margin: 0 auto;
   border: 2px solid rgba(0, 0, 0, 0.7);
   border-radius: 5vh;
   padding: 2vh;
@@ -88,7 +78,7 @@ body {
   padding: 4px;
   box-sizing: border-box;
   min-height: 20vh;
-  max-height: 35vh;
+  max-height: 50vh;
   overflow: auto;
   border-radius: 0 0 5vh 5vh;
 }
